@@ -20,7 +20,7 @@ function init() {
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
 	l1.setCrossOrigin('Anonymous');
-	l1.load('https://raw.githubusercontent.com/sparsh-18/a2g/master/logo.png', async function(img) {
+	l1.load('https://raw.githubusercontent.com/sparsh-18/A2G/master/logo.png', async function(img) {
 	  slide.setImage(img);
       root.scene.add(slide);
 	});

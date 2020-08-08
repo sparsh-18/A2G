@@ -2,11 +2,9 @@ body,html{
   margin: 0px;
   padding: 0px;
   background-color: #f6f6f6;
+  overflow-x: hidden;
 }
-/* #navbarNavAltMarkup{
-  margin-left: 65%;
-} */
-/* testimonial */
+
 .portcard{
 
 }

@@ -7,6 +7,9 @@ body,html{
   margin-left: 65%;
 } */
 /* testimonial */
+.portcard{
+
+}
 .bodytest{
   background: linear-gradient(90deg,#255c68ba,#6ce1cbbd);
   width: 100%;
@@ -131,10 +134,11 @@ section:before{
 }
 .header{
 
-  height: 500px;
+  height: 800px;
   background-image: url('../img/ap.jpg');
   /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url('img/header2.png'),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
   /* background-blend-mode:screen;  */
+  margin-bottom: 10%;
 }
 .bubbles img{
   width: 50px;
@@ -189,6 +193,7 @@ section:before{
 .bubbles{
   width: 100%;
   display: flex;
+  height: 200px;
   /* overflow: hidden; */
   align-items: center;
   justify-content: space-between;
@@ -196,13 +201,7 @@ section:before{
   bottom: 80px;
   z-index: 99;
 }
-svg{
-  /* background-image: linear-gradient(#4500ca 4%,rgba(69,0,202,0) 50%),url(../images/divi/divi-gallery-hero-background.jpg),linear-gradient(60deg,#28005f 16%,#8300e5 64%,#0f3bff 100%); */
-  margin-top: 80px;
-  /* z-index: 9999;
-  overflow: hidden; */
-  /* display: none; */
-}
+
 .circle-container{
    height: 300px;
    width: 300px;
@@ -437,6 +436,7 @@ footer{
 .svgcontainer{
   margin-top: -150px;
 }
+
 /* mobile view */
 @media (max-width: 768px) {
   h3{
@@ -468,6 +468,16 @@ footer{
     margin-bottom: 50px;
     /* margin-left: 100px; */
     text-align: center;
+  }
+  #roundcircle{
+    /* margin-left:1%; */
+  }
+  #a2gsvg1{
+    margin-top: 80px;
+  }
+  #a2gsvg2{
+    margin-left: 250px;
+    margin-top: 130px;
   }
 }
 

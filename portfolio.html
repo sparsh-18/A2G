@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/portfolio.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" integrity="sha512-lOtDAY9KMT1WH9Fx6JSuZLHxjC8wmIBxsNFL6gJPaG7sLIVoSO9yCraWOwqLLX+txsOw0h2cHvcUJlJPvMlotw==" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- https://source.unsplash.com/random -->
@@ -18,8 +22,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" id="linkd" style="color:#fff;font-size:20px;" href="/A2G">Home</a>
+          <div class="navbar-nav" style="float:right;">
+            <a class="nav-item nav-link" id="linkd" style="color:#fff;font-size:20px;" href="index.html">Home</a>
             <a class="nav-item nav-link" id="linkd" style="color:#fff;font-size:20px;" href="#">About Us</a>
             <a class="nav-item nav-link" id="linkd" style="color:#fff;font-size:20px;" href="portfolio.html">Portfolio</a>
             <a class="nav-item nav-link" id="linkd" style="color:#fff;font-size:20px;" href="contact.html">Contact</a>
@@ -27,80 +31,285 @@
       </div>
     </nav>
 
-    <div class="container" style="margin-top:8%">
+    <div class="container-fluid" style="margin-top:8%; padding-left: 5%; padding-right: 5%">
 
       <h1 style="text-align: center;color: #0d538a">Our Portfolio!</h1>
 
-      <div class="row">
+      <div class="row ">
 
-        <div class="col-md-4" style="padding: 10px">
+        <div class="col-md-4 revealOnScroll" data-animation="flipInX"  style="padding-bottom: 40px;">
           <div class="flex justify-center items-center h-auto">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://source.unsplash.com/random/1600x900" alt="Sunset in the mountains">
+                <img class="w-full" src="images/portfolio/archaggr.png" alt="image">
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div class="font-bold text-xl mb-2">The Essence of Good Health</div>
                     <p class="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      for, Mrs. Archana Agarwal <br> <a href="https://archanaagarwaldiet.com/">https://archanaagarwaldiet.com</a>
                     </p>
                   </div>
                   <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
                        SEO
                      </span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Email Marketing</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Design</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
                   </div>
                 </div>
           </div>
         </div>
 
-        <div class="col-md-4" style="padding: 10px">
-
+        <div class="col-md-4 revealOnScroll" data-animation="flipInX" data-timeout="400" style="padding-bottom: 40px;">
           <div class="flex justify-center items-center h-auto">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://source.unsplash.com/random/1600x900" alt="Sunset in the mountains">
+                <img class="w-full" src="images/portfolio/ribcon.png" alt="image">
                   <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div class="font-bold text-xl mb-2">Ribcon Industries</div>
                     <p class="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                      for, Mr. Koshinder <br> <a href="https://ribconindustries.com/">https://ribconindustries.com</a>
                     </p>
                   </div>
                   <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px; visibility: hidden">
                        SEO
                      </span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Email Marketing</span>
-                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Design</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px; visibility: hidden">SMO</span>
                   </div>
                 </div>
           </div>
         </div>
 
-      <div class="col-md-4" style="padding: 10px">
 
-        <div class="flex justify-center items-center h-auto">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg">
-              <img class="w-full" src="https://source.unsplash.com/random/1600x900" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
+        <div class="col-md-4 revealOnScroll" data-animation="flipInX" data-timeout="800" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/dunia.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Dunia Online Group</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. Hemant Passi <br> <a href="https://www.duniyaonline.com/">https://www.duniyaonline.com</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px; visibility: hidden">Website Designing</span>
+                  </div>
                 </div>
-                <div class="px-6 py-4">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
-                     SEO
-                   </span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Email Marketing</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Design</span>
-                </div>
-              </div>
+          </div>
         </div>
-      </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" data-timeout="900" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/kr.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Khandaani Rishta</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. Hemant Passi <br> <a href="https://www.khandaanirishta.com/">https://www.khandaanirishta.com</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px; visibility: hidden">Website Designing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" data-timeout="900" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/as.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">AS Garments</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. Alok Gupta <br> <a href="https://asgarments.in/">https://asgarments.in</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">PPC</span>
+                      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" data-timeout="900" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/srm.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">SRM</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. Sanjay Vishwanthan <br> <a href="https://www.srmup.in/">https://www.srmup.in</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 4px; visibility: hidden">Website Designing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/mobsquare.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Mobile Square</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mrs. Vikam <br> <a href="http://mobilesquare.co.in/">http://mobilesquare.co.in</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInX"  style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/medialabs.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Meddia Labs</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. V.K Malhotra <br> <a href="http://medialabsint.com">http://medialabsint.com</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px; visibility: hidden">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px; visibility: hidden">SMO</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/mectronics.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Mectronics</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mrs. Manish <br> <a href="https://www.mectronics.in/">https://www.mectronics.in</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-2">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">
+                       SEO
+                     </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">SMO</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Youtube Marketing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" data-timeout="800" style="padding-bottom: 40px;">
+          <div class="flex justify-center items-center h-auto">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="images/portfolio/fkm.png" alt="image">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Fresh Kisan Mandi</div>
+                    <p class="text-gray-700 text-base">
+                      for, Mr. T.K. Salil<br> <a href="https://freshkisanmandi.com/">https://freshkisanmandi.com</a>
+                    </p>
+                  </div>
+                  <div class="px-6 py-4">
+                    <p class="rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2" style="margin: 5px">Services</p>
+
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"  style="margin: 5px">Website Designing</span>
+                  </div>
+                </div>
+          </div>
+        </div>
+
     </div>
   </div>
 
     </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+/* Every time the window is scrolled ... */
+$(function() {
+
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
+
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
+
+</script>
   </body>
 </html>

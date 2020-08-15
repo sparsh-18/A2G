@@ -37,7 +37,7 @@
 
       <div class="row ">
 
-        <div class="col-md-4 revealOnScroll" data-animation="flipInX"  style="padding-bottom: 40px;">
+        <div class="col-md-4 revealOnScroll" data-animation="flipInY" data-timeout="100" style="padding-bottom: 40px;">
           <div class="flex justify-center items-center h-auto">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="images/portfolio/archaggr.png" alt="image">
@@ -309,6 +309,24 @@ $(function() {
 
   revealOnScroll();
 });
+
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        var l = document.getElementsByClassName("col-md-4");
+        for (var i = 0; i < l.length; i++) {
+          document.getElementsByClassName("col-md-4")[i].removeAttribute("data-animation");
+          document.getElementsByClassName("col-md-4")[i].removeAttribute("data-timeout");
+          document.getElementsByClassName("col-md-4")[i].classList.remove("revealOnScroll")
+        }
+
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 700px)");
+    myFunction(x); // Call listener function at run time
+    x.addListener(myFunction);
+
 
 </script>
   </body>

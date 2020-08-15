@@ -1,6 +1,12 @@
 body{
   background-color: #fbf4f438;
 }
+#linkd{
+  border-bottom: 2px solid transparent;
+}
+#linkd:hover{
+  border-bottom: 2px solid red;
+}
 #wrap{
   width: 530px;
   /* margin: 20px auto 0; */

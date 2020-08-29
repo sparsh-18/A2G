@@ -305,9 +305,10 @@ div.slide-left p {
 /* <p>CSS slide-in text...</p> */
 /* </div> */
 .services-text{
-  height: 150px;
+  
   text-align: center;
-  padding: 5%;
+  /* padding: 5%; */
+  margin-top: 10%;
 }
 .services-text h4{
   font-size: 40px;

@@ -16,13 +16,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <style>
-    .hideme
-      {
-          opacity:0;
-      }</style>
-
     <link rel="stylesheet" href="css/name.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <!-- <div id = "preloader" style="display:block; position:fixed;height:100%;width:100%; background-image: radial-gradient(#fff, #e6e6e6)"> <img src="loader.gif" style="position: absolute; top:40%; left:48%"  alt=""> </div> -->
@@ -65,7 +65,7 @@
            <!-- end bubbles -->
           <div class="" >
 
-            <div class="container" style="margin-top: 3%;padding-top:10%;">
+            <div class="container" style="padding-top:5%;">
               <div class="row">
 
                   <div class="col-md-6" id="a2gsvg1">
@@ -106,23 +106,25 @@
          </path></svg> -->
         </div>
       </div>
-      <div class="container">
-          <div class="container  rounded"  style="margin-top: 10%;padding-left:5%;">
+
+       <!-- usb  -->
+      <div id="usb" class="container-fluid wow fadeInLeft">
+          <div class="container-fluid  rounded"  style="margin-top: 10%;padding-left:5%;">
               <div class="row" id="roundcircle">
-                <div class="col-md-3 hideme" id="cont1" style="padding:10px;text-align:center;">
+                <div class="col-md-3" id="cont1" style="padding:10px;text-align:center;">
                   <img class="shadow" style="border-radius: 50%; width:50%" src="images/wkflow//333 150p-01.jpg" alt="badges">
                   <p style="color:grey;font-size:20px;">Strategized</p>
                   <!-- <div id="cont1imgdata" style="text-align:center; border-radius:50%; width:100px; height:100px;">Rafey</div> -->
                 </div>
-                <div class="col-md-3 hideme" style="padding:10px;text-align:center;">
+                <div class="col-md-3" style="padding:10px;text-align:center;">
                   <img class="shadow" style="border-radius: 50%; width:50%" src="images/wkflow/ESM2-150ppp.jpg" alt="badges">
                   <p style="color:grey;font-size:20px;">Connected</p>
                 </div>
-                <div class="col-md-3 hideme" style="padding:10px;text-align:center;">
+                <div class="col-md-3" style="padding:10px;text-align:center;">
                   <img class="shadow" style="border-radius: 50%; width:50%" src="images/wkflow//2334593.jpg" alt="badges">
                   <p style="color:grey;font-size:20px;">Digitized</p>
                 </div>
-                <div class="col-md-3 hideme" style="padding:10px;text-align:center;">
+                <div class="col-md-3" style="padding:10px;text-align:center;">
                   <img class="shadow" style="border-radius: 50%; width:50%" src="images/wkflow/str.jpg" alt="badges">
                   <p style="color:grey;font-size:20px;">Promoted</p>
                 </div>
@@ -130,35 +132,134 @@
           </div>
         </div>
 
-        <div class="container hideme text-center">
+        <script>
+          $( document ).ready(function() {
+            new WOW().init();
+          });
+        </script>
+
+        <!-- ------------------- -->
+
+
+        <!-- services -->
+        <div class="container text-center wow fadeInUp">
               <div class="services-text">
                     <h1 style="text-align: center; color: #0d538a;">SERVICES</h1>
               </div>
                         <!-- 3D Slideshow Section -->
 
-                      <div id="slideshow" style="padding: 0px; margin-bottom: 0px;">
+                      <div id="slideshow" style="padding: 0px; margin-bottom: 0px;" >
                         <div class="entire-content">
                           <div class="content-carrousel">
-                            <figure class="shadow"><img src="images/services/dm-1.png"/></figure>
-                            <figure class="shadow"><img src="images/services/1.jpg"/></figure>
-                            <figure class="shadow"><img src="images/services/seo2.png"/></figure>
-                            <figure class="shadow"><img src="images/services/smmh.png"/></figure>
-                            <figure class="shadow"><img src="images/services/lg.jpg"/></figure>
-                            <figure class="shadow"><img src="images/services/gad.png"/></figure>
-                            <figure class="shadow"><img src="images/services/Email.jpg"/></figure>
-                            <figure class="shadow"><img src="images/services/ytm.png"/></figure>
-                            <figure class="shadow"><img src="images/services/ga.png"/></figure>
+                            <figure class="shadow"><a href="services.html"><img src="images/services/dm-1.png"/></a></figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/1.jpg"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/seo2.png"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/smmh.png"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/lg.jpg"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/gad.png"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/Email.jpg"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/ytm.png"/> </a> </figure>
+                            <figure class="shadow"><a href="services.html"> <img src="images/services/ga.png"/> </a> </figure>
                       </div>
                       </div>
                     </div>
-                  <a href="services.html"><button class="btn btn-info">learn more</button></a>
+                  <!-- <a href="services.html"><button class="btn btn-info">learn more</button></a> -->
+
+                  <script>
+                    $( document ).ready(function() {
+                      new WOW().init();
+                    });
+                  </script>
            </div>
+    <!-- ---------------------- -->
+
+
+
+    <!-- portfolio -->
+
+    <div class="container wow fadeInRight">
+      <div class="services-text">
+        <h1 style="text-align: center; color: #0d538a; margin-bottom: 5%;">OUR PORTFOLIO!</h1>
+      </div>
+      <div class="owl-carousel">
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/archaggr.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/as.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/dunia.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/fkm.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/kr.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/mectronics.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/mobsquare.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/ribcon.png" alt=""> </div>
+        <div class = "shadow p-3 mb-5 bg-white rounded"> <img src="images/portfolio/srm.png" alt=""> </div>
+      </div>
+  
+      <script type="text/javascript">
+            var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          loop:true,
+          margin:30,
+          responsiveClass:true,
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true,
+                  loop: true
+              },
+              600:{
+                  items:2,
+                  nav:false,
+                  loop: true
+              },
+              1000:{
+                  items:3,
+                  nav:true,
+                  loop:true
+              }
+          },
+          autoplay:true,
+          autoplayTimeout:2000,
+          autoplayHoverPause:false
+        });
+  
+        document.getElementsByClassName("owl-nav")[0].style.visibility = "hidden";
+
+        $( document ).ready(function() {
+            new WOW().init();
+          });
+  
+      </script>
+    </div>
+  <!-- ----------------------------- -->
+  
+
+    <div class="container wow fadeInUp shadow p-3 mb-5 bg-white rounded">
+      <div class="heading" style="text-align: center; padding-top:1%;">
+
+        <h4 id="exclamation">WHY US <span style="color:black">!</span> </h4>
+      </div>
+       <p style="padding: 1%; text-align: justify;" id="para">An impressive company profile is a must to improve brand image of the company which will have a phenomenal impact on your audience and customer, giving them an insight into your company's performance.
+          <a href="#">A2G Enterprises </a>will help you establish a company persona which is inline with your company values, showcasing your intelligence; appeal to your target audience's need and values, and keeping things professional,
+          all at once.
+          Our mission is to provide customized and targeted solutions to our clients by implementing effective digital marketing strategies ensuring extraordinary returns and offer a continuous support for optimum result.
+           Recognize businesses true potential and able to create tailored fit solutions to meet business requirements.
+           Be known for our integrity and timely delivery of the work.
+      </p>
+    </div>
+
+<!-- 
+    <div class="svgcontainer" style="overflow:hidden; z-index: -1; margin-top: -5%;">
+      <img class="imgsvg2" src="img/undraw_hey_email_liaa.svg" width="400px" style="opacity: 40%;" alt="">
+   </div>
+ -->
+
+
   <!--  </div> -->
     <!-- testimonial -->
-    <h1 style="text-align: center; color: #0d538a;margin-top:20px;">Testimonial</h1>
-    <div class="container hideme " style="padding-top: 4%; z-index: 55;">
+    
+    <h1 style="text-align: center; color: #0d538a; margin-top: 8%;">TESTIMONIALS !</h1>
+    <div class="container wow fadeInUp" style="padding-top: 2%; z-index: 55;">
 
-    <div class="container bodytest animated" id="testimonial" style="padding:5%; padding-top: 0%; height:380px;">
+    <div class=" bodytest animated" id="testimonial" style=" padding-top: 0%; ">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
         <section>
@@ -172,7 +273,7 @@
                     <div class="content1" style="text-align:center;">
                         <p>I have no hesitation in recommending A2g Enterprises to anybody who is looking for an efficient agency to handle their Digital Advertising, Digital Presence and in General improving the Digital Hygiene of their company.</p>
                         <h4>Manish Agrawal</h5>
-                        <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br>
+                        <!-- <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br> -->
                         <h6>Mectronics Marketing Services</h6>
                     </div>
                 </div>
@@ -180,7 +281,7 @@
                   <div class="content2" style="text-align:center;">
                       <p>Gunjan Gupta and her team have made a big difference to our business with attractive website and promotion using SEO, Social Media techniques. Her team is efficient, fast to respond and pleasure to work with. We are happy to recommend them.</p>
                       <h4>Vikram Madaan</h4>
-                      <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br>
+                      <!-- <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br> -->
                       <h6>Mobile Square</h6>
                   </div>
                 </div>
@@ -188,7 +289,7 @@
                   <div class="content3" style="text-align:center;">
                       <p>It’s been a most satisfying experience with Gunjan  Gupta and her team at A2G Creatives .The correct guidance and a patient ear to my thoughts and vision has manifested in a website which is both comprehensive as well pleasing to the eye.</p>
                       <h4>Archana Agrawal</h4>
-                      <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br>
+                      <!-- <img src="img/check.jpg" alt="" width="100px" height="100px" style="border-radius:50%;"><br><br> -->
                       <h6>The essence of Good Health</h6>
                   </div>
                 </div>
@@ -196,25 +297,8 @@
       </div>
     </div>
   </div>
-    <!-- testimonial end -->
-    <!-- Why Us ! -->
-    <div class="svgcontainer" style="overflow:hidden; z-index: -1;">
-       <img class="imgsvg2" src="img/undraw_hey_email_liaa.svg" width="400px" style="opacity: 40%;" alt="">
-    </div>
 
-    <div class="container hideme shadow p-3 mb-5 bg-white rounded">
-      <div class="heading" style="text-align: center; padding-top:1%;">
 
-        <h4 id="exclamation">WHY US <span style="color:black">!</span> </h4>
-      </div>
-       <p style="padding: 1%; text-align: justify;" id="para">An impressive company profile is a must to improve brand image of the company which will have a phenomenal impact on your audience and customer, giving them an insight into your company's performance.
-          <a href="#">A2G Enterprises </a>will help you establish a company persona which is inline with your company values, showcasing your intelligence; appeal to your target audience's need and values, and keeping things professional,
-          all at once.
-          Our mission is to provide customized and targeted solutions to our clients by implementing effective digital marketing strategies ensuring extraordinary returns and offer a continuous support for optimum result.
-           Recognize businesses true potential and able to create tailored fit solutions to meet business requirements.
-           Be known for our integrity and timely delivery of the work.
-      </p>
-    </div>
 
     <footer>
        <div class="container">
@@ -232,7 +316,7 @@
                   Sector 63 Noida ,UP
                 </p>
           </div>
-          <div class="col-md-4 socialicon hideme">
+          <div class="col-md-4 socialicon wow fadeInRight">
              <i class="fa fa-google-plus" aria-hidden="true"></i>
              <i class="fa fa-twitter"></i>
              <i class="fa fa-facebook"></i>
@@ -266,26 +350,6 @@
             });
 
             $(document).ready(function() {
-
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
-
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-
-                $(this).animate({'opacity':'1'},300);
-
-            }
-
-        });
-
-    });
 
 });
 

@@ -13,9 +13,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/animate.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" integrity="sha512-lOtDAY9KMT1WH9Fx6JSuZLHxjC8wmIBxsNFL6gJPaG7sLIVoSO9yCraWOwqLLX+txsOw0h2cHvcUJlJPvMlotw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- https://source.unsplash.com/random -->
+   
     <nav class="navbar navbar-expand-lg navbar-light" id="navanim">
       <a class="navbar-brand" style="color:#fff" href="index.html">A2G Creatives</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +32,9 @@
       </div>
     </nav>
 
-    <div class="container-fluid" style="margin-top:8%; padding-left: 5%; padding-right: 5%">
+    <div class="container-fluid" style="margin-top:5%; padding-left: 5%; padding-right: 5%" id = "mob">
 
-      <h1 style="text-align: center;color: #0d538a">Our Portfolio!</h1>
+      <h1 style="text-align: center;color: #0d538a; margin-top: 5%; margin-bottom: 3%;">OUR PORTFOLIO!</h1>
 
       <div class="row ">
 
@@ -313,11 +314,20 @@ $(function() {
 
     function myFunction(x) {
       if (x.matches) { // If media query matches
+        document.getElementById("mob").style = "margin-top: 20%";
         var l = document.getElementsByClassName("col-md-4");
         for (var i = 0; i < l.length; i++) {
           document.getElementsByClassName("col-md-4")[i].removeAttribute("data-animation");
           document.getElementsByClassName("col-md-4")[i].removeAttribute("data-timeout");
           document.getElementsByClassName("col-md-4")[i].classList.remove("revealOnScroll")
+          document.getElementsByClassName("col-md-4")[i].classList.add("wow");
+          if(i%2 == 0)
+            document.getElementsByClassName("col-md-4")[i].classList.add("fadeInRight");
+          else
+            document.getElementsByClassName("col-md-4")[i].classList.add("fadeInLeft");
+          $( document ).ready(function() {
+            new WOW().init();
+          });
         }
 
       }
@@ -326,7 +336,6 @@ $(function() {
     var x = window.matchMedia("(max-width: 700px)");
     myFunction(x); // Call listener function at run time
     x.addListener(myFunction);
-
 
 </script>
   </body>

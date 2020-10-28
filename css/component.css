@@ -1,16 +1,5 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body {
-	background: #e6e6e6;
-	font-family: 'Lato', Arial, sans-serif;
-	color: #fff;
-}
-
-.wrapper {
-	margin: 0 auto 100px auto;
-	max-width: 960px;
-}
-
 .stage {
 	list-style: none;
 	padding: 0;
@@ -21,24 +10,25 @@ Build the scene and rotate on hover
 **************************************/
 
 .scene {
-	width: 260px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	margin: 30px;
 	float: left;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
+
 }
 
 .movie {
-	width: 260px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-transform: translateZ(-130px);
-	-moz-transform: translateZ(-130px);
-	transform: translateZ(-130px);
+	-webkit-transform: translateZ(-100px);
+	-moz-transform: translateZ(-100px);
+	transform: translateZ(-100px);
 	-webkit-transition: -webkit-transform 350ms;
 	-moz-transition: -moz-transform 350ms;
 	transition: transform 350ms;
@@ -53,12 +43,11 @@ Build the scene and rotate on hover
 /*************************************
 Transform and style the two planes
 **************************************/
-
 .movie .poster,
 .movie .info {
 	position: absolute;
-	width: 260px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -66,17 +55,17 @@ Transform and style the two planes
 }
 
 .movie .poster  {
-	-webkit-transform: translateZ(130px);
-	-moz-transform: translateZ(130px);
-	transform: translateZ(130px);
+	-webkit-transform: translateZ(100px);
+	-moz-transform: translateZ(100px);
+	transform: translateZ(100px);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .movie .info {
-	-webkit-transform: rotateY(90deg) translateZ(130px);
-	-moz-transform: rotateY(90deg) translateZ(130px);
-	transform: rotateY(90deg) translateZ(130px);
+	-webkit-transform: rotateY(90deg) translateZ(100px);
+	-moz-transform: rotateY(90deg) translateZ(100px);
+	transform: rotateY(90deg) translateZ(100px);
 	border: 1px solid #B8B5B5;
 	font-size: 0.75em;
 }
@@ -87,17 +76,17 @@ Shadow beneath the 3D object
 
 .csstransforms3d .movie::after {
 	content: '';
-	width: 260px;
-	height: 260px;
+	width: 200px;
+	height: 200px;
 	position: absolute;
 	bottom: 0;
 	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
-	-webkit-transform: rotateX(90deg) translateY(130px);
-	-moz-transform: rotateX(90deg) translateY(130px);
-	transform: rotateX(90deg) translateY(130px);
+	-webkit-transform: rotateX(90deg) translateY(100px);
+	-moz-transform: rotateX(90deg) translateY(100px);
+	transform: rotateX(90deg) translateY(100px);
 	-webkit-transition: box-shadow 350ms;
 	-moz-transition: box-shadow 350ms;
 	transition: box-shadow 350ms;
@@ -133,11 +122,10 @@ Movie information
 
 .info p {
 	padding: 1.2em 1.4em;
-	margin: 2px 0 0;
-	font-weight: 700;
+	margin: 5% 0 0;
+	font-weight: 600;
 	color: #666;
 	line-height: 1.4em;
-	border-top: 10px solid #555;
 }
 
 /*************************************
@@ -157,12 +145,12 @@ Generate "lighting" using box shadows
 }
 
 .csstransforms3d .movie:hover .poster {
-	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+	box-shadow: inset 200px 0px 40px rgba(255,255,255,0.8);
 }
 
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
-	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+	box-shadow: inset -200px 0px 40px rgba(0,0,0,0.5);
 }
 
 .csstransforms3d .movie:hover .info,
@@ -175,36 +163,36 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-  background-image: url("../digmkt.jpg");
+  background-image: url("../images/services/dm-1.png");
 }
 
 .scene:nth-child(2) .poster {
-  background-image: url("../web.jpg");
+  background-image: url("../images/services/webd.png");
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url("../seo.jpg");
+  background-image: url("../images/services/seo2.png");
 }
 
 .scene:nth-child(4) .poster {
-  background-image: url("../smm.jpg");
+  background-image: url("../images/services/smmh.png");
+}
+.scene:nth-child(5) .poster {
+  background-image: url("../images/services/gad.png");
+}
+.scene:nth-child(6) .poster {
+  background-image: url("../images/services/lg.png");
+}
+.scene:nth-child(7) .poster {
+  background-image: url("../images/services/Email.png");
+}
+.scene:nth-child(8) .poster {
+  background-image: url("../images/services/ga.png");
+}
+.scene:nth-child(9) .poster {
+  background-image: url("../images/services/ytm.png");
 }
 
-.scene:nth-child(1) .info header {
-	background-image: url("../dm-1.png");
-}
-
-.scene:nth-child(2) .info header {
-	background-image: url("../prg.jpg");
-}
-
-.scene:nth-child(3) .info header {
-	background-image: url("../seo2.png");
-}
-
-.scene:nth-child(4) .info header {
-	background-image: url("../smmh.png");
-}
 /*************************************
 Fallback
 **************************************/

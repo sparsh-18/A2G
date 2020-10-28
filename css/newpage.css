@@ -1,0 +1,193 @@
+body,html{
+    background-image: url('../images/arrowgrid.png');
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+  }
+  #header{
+    /* height: 100vh; */
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .whycontent{
+    /* height: 300px; */
+  }
+  #navanim{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top:40px;
+    background: #1a1a1a;
+    overflow: hidden;
+ }
+ .contact-nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    background: #1d56a0;
+    overflow: hidden;
+  }
+  .contact-nav p{
+    display:inline-block;
+    padding: 0;
+    color:#fff;
+    padding-left: 100px;
+    /* position: fixed; */
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .top{
+    margin-top: 140px;
+  }
+  #linkd{
+    border-bottom: 2px solid transparent;
+  }
+  #linkd:hover{
+    border-bottom: 2px solid red;
+  }
+  .contentbody{
+    /* margin-top: 80px; */
+    height: auto;
+    position: absolute;
+    z-index: 10;
+  }
+  .text_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    font-size: 4rem;
+    animation-timing-function: steps(18, end);
+    animation-iteration-count: infinite;
+  }
+  .text_1::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  .text_3 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter3;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    font-size: xxx-large;
+    animation-timing-function: steps(18, end);
+    animation-iteration-count: infinite;
+  }
+  .text_3::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  @keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 75%;
+    }
+  }
+  @keyframes typewriter3 {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 42%;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  h3{
+    width: 100%;
+    margin-top: 100px;
+    animation: type 8s infinite steps(44);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    border-right: 1px solid white;
+  }
+  /* services */
+  .service{
+    width: 0px;
+    height: 100px;
+    background-color: red;
+  }
+
+  .plse{
+    background: #ff6d4a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-family: verdana;
+    text-transform: uppercase;
+    animation: animate 3s linear infinite;
+    box-shadow: 0 0 0 0 rgba(255,109,74, 0.7);
+  }
+  @keyframes animate {
+    0%{
+      box-shadow: 0 0 0 0 rgba(20,83,138, 0.7);
+    }
+    40%{
+      box-shadow: 0 0 0 30px rgba(20,83,138,  0);
+    }
+    50%{
+      box-shadow: 0 0 0 30px rgba(20,83,138, 0);
+    }
+    100%{
+      box-shadow: 0 0 0 0 rgba(20,83,138, 0);
+    }
+  }
+  
+  
+  /* mobile view */
+  @media (max-width: 768px) {
+    .contact-nav{
+        height: 80px;
+      }
+      #navanim{
+        top: 80px;
+      }
+      .contact-nav p{
+        padding-left: 0;
+        margin-top: 1%;
+        font-size: 20px;
+      }
+    .text_1{
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .whycontent{
+      /* height: 400px; */
+    }
+    @keyframes typewriter {
+      0%, 100% {
+        width: 0;
+      }
+      20%, 80% {
+        width: 90%;
+      }
+    }
+  }

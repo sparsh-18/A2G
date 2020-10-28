@@ -102,7 +102,9 @@
 	transform: rotateY(320deg) translateZ(400px); 
 } .content-carrousel figure:nth-child(10) {
 	transform: rotateY(360deg) translateZ(400px); 
-} 
+} .content-carrousel figure:nth-child(11) {
+	transform: rotateY(360deg) translateZ(400px); 
+}
 
 .shadow {
     /* position: absolute; */
